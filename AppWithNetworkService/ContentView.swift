@@ -1,19 +1,15 @@
-//
-//  ContentView.swift
-//  AppWithNetworkService
-//
-//  Created by Артем Саркисов on 09.02.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        HStack(spacing: 4) {
+            Text("App with")
+            
+            Image(systemName: "network")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            Text("service")
         }
         .padding()
     }

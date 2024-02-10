@@ -14,6 +14,14 @@
 		6E4C123E2B7683020089FDE2 /* AppWithNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C123D2B7683020089FDE2 /* AppWithNetworkServiceTests.swift */; };
 		6E4C12482B7683020089FDE2 /* AppWithNetworkServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12472B7683020089FDE2 /* AppWithNetworkServiceUITests.swift */; };
 		6E4C124A2B7683020089FDE2 /* AppWithNetworkServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12492B7683020089FDE2 /* AppWithNetworkServiceUITestsLaunchTests.swift */; };
+		6E4C125B2B7742410089FDE2 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C125A2B7742410089FDE2 /* NetworkRequest.swift */; };
+		6E4C125D2B7742960089FDE2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C125C2B7742960089FDE2 /* RequestMethod.swift */; };
+		6E4C125F2B7742BF0089FDE2 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C125E2B7742BF0089FDE2 /* ResponseError.swift */; };
+		6E4C12612B7744050089FDE2 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12602B7744050089FDE2 /* RequestBody.swift */; };
+		6E4C12632B7744830089FDE2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12622B7744830089FDE2 /* Endpoint.swift */; };
+		6E4C12652B7744FB0089FDE2 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12642B7744FB0089FDE2 /* Secret.swift */; };
+		6E4C12672B77455C0089FDE2 /* RequestQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12662B77455C0089FDE2 /* RequestQueryParams.swift */; };
+		6E4C126A2B77459B0089FDE2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C12692B77459B0089FDE2 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		6E4C12432B7683020089FDE2 /* AppWithNetworkServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWithNetworkServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4C12472B7683020089FDE2 /* AppWithNetworkServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWithNetworkServiceUITests.swift; sourceTree = "<group>"; };
 		6E4C12492B7683020089FDE2 /* AppWithNetworkServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWithNetworkServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E4C125A2B7742410089FDE2 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		6E4C125C2B7742960089FDE2 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		6E4C125E2B7742BF0089FDE2 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		6E4C12602B7744050089FDE2 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		6E4C12622B7744830089FDE2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6E4C12642B7744FB0089FDE2 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		6E4C12662B77455C0089FDE2 /* RequestQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestQueryParams.swift; sourceTree = "<group>"; };
+		6E4C12692B77459B0089FDE2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 		6E4C122B2B7683000089FDE2 /* AppWithNetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				6E4C12562B7683140089FDE2 /* NetworkService */,
 				6E4C122C2B7683000089FDE2 /* AppWithNetworkServiceApp.swift */,
 				6E4C122E2B7683000089FDE2 /* ContentView.swift */,
 				6E4C12302B7683020089FDE2 /* Assets.xcassets */,
@@ -125,6 +142,29 @@
 				6E4C12492B7683020089FDE2 /* AppWithNetworkServiceUITestsLaunchTests.swift */,
 			);
 			path = AppWithNetworkServiceUITests;
+			sourceTree = "<group>";
+		};
+		6E4C12562B7683140089FDE2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C12692B77459B0089FDE2 /* NetworkService.swift */,
+				6E4C12682B7745830089FDE2 /* Request */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		6E4C12682B7745830089FDE2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C125A2B7742410089FDE2 /* NetworkRequest.swift */,
+				6E4C125C2B7742960089FDE2 /* RequestMethod.swift */,
+				6E4C125E2B7742BF0089FDE2 /* ResponseError.swift */,
+				6E4C12602B7744050089FDE2 /* RequestBody.swift */,
+				6E4C12662B77455C0089FDE2 /* RequestQueryParams.swift */,
+				6E4C12622B7744830089FDE2 /* Endpoint.swift */,
+				6E4C12642B7744FB0089FDE2 /* Secret.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4C126A2B77459B0089FDE2 /* NetworkService.swift in Sources */,
+				6E4C12672B77455C0089FDE2 /* RequestQueryParams.swift in Sources */,
+				6E4C12632B7744830089FDE2 /* Endpoint.swift in Sources */,
+				6E4C125D2B7742960089FDE2 /* RequestMethod.swift in Sources */,
+				6E4C125B2B7742410089FDE2 /* NetworkRequest.swift in Sources */,
 				6E4C122F2B7683000089FDE2 /* ContentView.swift in Sources */,
+				6E4C125F2B7742BF0089FDE2 /* ResponseError.swift in Sources */,
+				6E4C12652B7744FB0089FDE2 /* Secret.swift in Sources */,
 				6E4C122D2B7683000089FDE2 /* AppWithNetworkServiceApp.swift in Sources */,
+				6E4C12612B7744050089FDE2 /* RequestBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
